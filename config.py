@@ -28,7 +28,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 STICKERS = (environ.get('STICKERS')).split()
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}🙋🏻,\n\nI can store files and others can acess it with special links.\n\nI am specially made for <a href=>Mallu Bros</a>")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}🙋🏻,\n\nI can store files and others can acess it with special links.\n\nI am specially made for <a href='https://t.me/+IW4hntE6rx9kMDY1'>Mallu Bros</a>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
