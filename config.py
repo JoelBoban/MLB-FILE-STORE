@@ -25,7 +25,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-STICKERS = (environ.get('STICKERS')).split()
+STICKERS = os.environ.get('STICKERS').split()
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}🙋🏻,\n\nI can store files and others can acess it with special links.\n\nI am specially made for <a href='https://t.me/+IW4hntE6rx9kMDY1'>Mallu Bros</a>")
