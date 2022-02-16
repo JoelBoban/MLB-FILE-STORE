@@ -25,7 +25,6 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-STICKERS = os.environ.get('STICKERS').split()
 
 OWNER_NAME = os.environ.get("OWNER_NAME", "")
 #start message
