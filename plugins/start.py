@@ -11,12 +11,19 @@ from config import ADMINS, FORCE_MSG, START_MSG, OWNER_ID, CUSTOM_CAPTION, DISAB
 from helper_func import subscribed, encode, decode, get_messages
 from database.sql import add_user, query_msg, full_userbase
 
-
 #=====================================================================================##
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+
+ST = [ 
+"CAACAgUAAxkBAALnTWIMjpE0lZhGHiNtoecwrVIKf93pAALZBAACIPNhVKv-3WsSsZUYHgQ",
+"CAACAgUAAxkBAALnTmIMjo1B0Ir58cFH9zSkK1nz8qDrAALaBAACIPNhVH40vQm0WXfvHgQ",
+"CAACAgUAAxkBAALnSmIMjnKhmhVXDMG--VL-zX0V31xnAALYBAACIPNhVOuZgAcTjwqDHgQ",
+"CAACAgUAAxkBAALnR2IMjmSbudn-QzJjc8PVVi8ttAbcAALXBAACIPNhVEeBDLUAAZoE8x4E",
+"CAACAgUAAxkBAALnRGIMjjPQiscjXb8KD0WTDwdnXYb6AALVBAACIPNhVIDlVV3Z4DHaHgQ",
+]
 
 #=====================================================================================##
 
@@ -97,7 +104,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_sticker(
-            sticker = random.choice(STICKERS))
+            sticker = random.choice(ST))
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
